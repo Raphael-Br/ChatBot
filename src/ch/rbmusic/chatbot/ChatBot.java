@@ -5,7 +5,7 @@ public class ChatBot {
     final static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        greet("Mr. Robot", "1989");
+        greet("Mr Robot", "1989");
         remindName();
         guessAge();
         count();
