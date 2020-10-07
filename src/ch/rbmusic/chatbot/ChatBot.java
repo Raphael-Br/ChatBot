@@ -2,10 +2,10 @@ package ch.rbmusic.chatbot;
 import java.util.Scanner;
 
 public class ChatBot {
-    final static Scanner scanner = new Scanner(System.in); // Do not change this line
+    final static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        greet("Mr. Robot", "1989"); // change it as you need
+        greet("Mr. Robot", "1989");
         remindName();
         guessAge();
         count();
@@ -44,15 +44,14 @@ public class ChatBot {
 
     static void test() {
         System.out.println("Let's test your programming knowledge.");
-        // write your code here
         System.out.println("Why do we use methods?");
         String [] quiz = {
                 "1. To repeat a statement multiple times.",
                 "2. To decompose a program into several small subroutines.",
                 "3. To determine the execution time of a program.",
                 "4. To interrupt the execution of a program."};
-        for (int i = 0; i < quiz.length; i++) {
-            System.out.println(quiz[i]);
+        for (String s : quiz) {
+            System.out.println(s);
         }
         int quizAnswer;
         boolean quizStop = false;
@@ -67,6 +66,7 @@ public class ChatBot {
     }
 
     static void end() {
-        System.out.println("Congratulations, have a nice day!"); // Do not change this text
+        System.out.println("Congratulations, have a nice day!");
     }
+
 }
